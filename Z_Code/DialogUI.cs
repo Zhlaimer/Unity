@@ -107,7 +107,7 @@ public class DialogUI : MonoBehaviour
             //如果类型是：Say说话
             case CommandType.Say:
                 Say say = (Say)command;//实例化Say对象say   强制类型转换吗？？？ 
-                HeadPortRait.sprite = Resources.Load<Sprite>(say.Image);//更换头像
+                //HeadPortRait.sprite = Resources.Load<Sprite>(say.Image);//更换头像
                 NameText.text = say.Name;//人物
                 ConttentText.text = say.Content;//说话内容
                 if (!string.IsNullOrEmpty(say.Sound))//如果音效名不为空
